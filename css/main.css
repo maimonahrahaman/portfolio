@@ -48,3 +48,443 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+/* Set max width for the html element to 1200px and center it on the page */
+html {
+    max-width: 1200px;
+    box-sizing:border-box;
+    margin: auto;
+}
+
+/* Wraps the content with 95% width and centered */
+.wrapper {
+    width: 95%;
+    margin: auto;
+}
+
+/* Sets font family, font size, and font weight for body text */
+body {
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+
+/* Styles for different heading tags */
+h1 {
+    font-family: "courier-prime", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    font-weight: 700;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-family: Impact; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    font-size: 35px;
+    padding-left: 5px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+
+h3 {
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 23px;
+    font-weight: 700;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+/* Sets color for text with class 'colour' */
+.colour {
+    color: #6D466B;
+}
+.h1-colour {
+    color: #412234
+}
+
+/* Sets width to 100% for all images  */
+.img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.link {
+    color: #412234;
+    padding: 10px;
+}
+
+.logo {
+    display: inline;
+    width: 100px;
+}
+
+/* animation for the logo so that it spins */
+.logo {
+    animation: spin 5s infinite linear;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  
+
+/* Styles for the navigation bar with background color, padding, and text alignment */
+.navigation {
+    background-color: #EAD7D7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    clear: right;
+}
+
+nav ul li {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/* Styles navigation links with no bullets and underline*/
+li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #6D466B;
+    padding: 35px;
+    font-size: 18px;
+}
+
+
+
+/* places banner text i.e. company's name on top of the picture  */
+.banner {
+    position: relative;
+}
+
+ .banner-text {
+    background-color: #b49fccc5;
+    color: #412234;
+    position: absolute;
+    top: 3%;
+    padding:5.2% 2.5%;
+    text-align: center;
+}
+
+/* styles fr button */
+button {
+	padding: 15px 40px;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-family: Impact; 
+    font-size: 16px;
+    text-align: center;
+}
+
+.button-1 {
+    background-color: #B59FCC;
+    border-color: #EAD7D7;
+    border-style: solid;
+    border-radius: 20%;
+    color: #412234;
+}
+
+.button-2 {
+    background-color: #6D466B;
+    border-color: #B59FCC;
+    border-style: solid;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.button-3 {
+    background-color: #EAD7D7;
+    border-color: #6D466B;
+    border-style: solid;
+    color: #412234;
+    text-decoration: underline;
+    text-align: center;
+    width:98%;
+}
+
+/* moves the button to center */
+.cbutton-1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cimg-1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.ctext {
+    text-align: left;
+}
+
+form textarea {
+    width: 97%;
+}
+
+.label {
+    padding-bottom: 30px;
+}
+
+form {
+    padding-left: 10px;
+}
+
+
+
+/* animation for the button so it increses size */
+.button-1, .button-2, .button-3 {
+    animation: buttonAnimation 1s ease-in-out infinite alternate;
+}
+
+@keyframes buttonAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.img-1 {
+    width: 220px;
+    height: 130px;
+   object-fit:contain;
+   padding-bottom: 10px;
+}
+
+
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+    padding-bottom: 25px;
+}
+
+
+.img-2 {
+   width: 220px;
+   object-fit:contain;
+   padding-bottom: 10px;
+}
+
+.img-3 {
+    width: 400px;
+    padding-bottom: 20px;
+ }
+
+.content-management {
+    display: none;
+}
+
+/* background colour bleeds */
+.footer{
+	background-color: #EAD7D7;
+	color:#412234;
+	padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+.social-media {
+    text-align: right;
+    float: right;
+
+}
+
+.menu-text {
+    font-size: 14px;
+}
+
+.img-about {
+    height: 200px;
+    padding-top: 10px;
+}
+
+/* for tablet */
+@media screen and (min-width: 768px){
+	/* decreases the content size so more bleed */
+    
+    .wrapper {
+        width: 80%;
+        margin: auto;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    li a {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+
+    .banner-text {
+        left: 0%;
+        padding: 72px 77px;
+    }
+
+        /* Styles for different heading tags */
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .content-management {
+        display: block;
+    }
+
+
+    .flex-2 {
+        display: flex;
+    }
+
+    .img-about {
+        padding-left: 25px;
+        height: 250px;
+    }
+}
+
+/* for desktop */
+@media screen and (min-width: 1366px){
+	/* decreases the content size so more bleed */
+    .wrapper {
+        width: 70%;
+        margin: auto;
+    }
+
+    /* puts nav in line by using flex */
+    nav ul {
+        display: flex;
+        margin-top: 25px;
+        justify-content: center;
+    }
+
+    li a {
+        font-size: 18px;
+        padding: 15px 30px;
+    }
+
+    .banner-text {
+        left: 10%;
+    }
+
+    /* Styles for different heading tags */
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 14px;
+}
+
+button {
+    text-align: center;
+    width:98%;
+}
+
+/* menu items in grid form. */
+.item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "a a"
+    "b c"
+    "b c"
+    "b c";
+}
+
+/* naming them for grid templete and margin for space */
+
+.item h3 {
+    grid-area: a;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    
+}
+.item img {
+    grid-area: b;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+.item p {
+    grid-area: c;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.item .img-c {
+    height: 250px;
+    object-fit: none;
+}
+
+.menu-text {
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+}  
