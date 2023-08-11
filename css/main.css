@@ -343,13 +343,20 @@ form {
     padding-top: 10px;
 }
 
-/* for tablet */
+/* for desktop */
 @media screen and (min-width: 768px){
 	/* decreases the content size so more bleed */
     
     .wrapper {
         width: 80%;
         margin: auto;
+    }
+
+     /* puts nav in line by using flex */
+     nav ul {
+        display: flex;
+        margin-top: 25px;
+        justify-content: center;
     }
 
     .logo {
@@ -397,94 +404,3 @@ form {
         height: 250px;
     }
 }
-
-/* for desktop */
-@media screen and (min-width: 1366px){
-	/* decreases the content size so more bleed */
-    .wrapper {
-        width: 70%;
-        margin: auto;
-    }
-
-    /* puts nav in line by using flex */
-    nav ul {
-        display: flex;
-        margin-top: 25px;
-        justify-content: center;
-    }
-
-    li a {
-        font-size: 18px;
-        padding: 15px 30px;
-    }
-
-    .banner-text {
-        left: 10%;
-    }
-
-    /* Styles for different heading tags */
-h1 {
-    font-size: 70px;
-}
-
-h2 {
-    font-size: 45px;
-}
-
-h3 {
-    font-size: 30px;
-}
-
-p {
-    font-size: 14px;
-}
-
-button {
-    text-align: center;
-    width:98%;
-}
-
-/* menu items in grid form. */
-.item {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: 
-    "a a"
-    "b c"
-    "b c"
-    "b c";
-}
-
-/* naming them for grid templete and margin for space */
-
-.item h3 {
-    grid-area: a;
-    margin-right: 5px;
-    margin-bottom: 10px;
-    
-}
-.item img {
-    grid-area: b;
-    margin-right: 5px;
-    margin-bottom: 10px;
-    padding-left: 5px;
-}
-.item p {
-    grid-area: c;
-    margin-right: 5px;
-    margin-bottom: 10px;
-}
-
-.item .img-c {
-    height: 250px;
-    object-fit: none;
-}
-
-.menu-text {
-    padding-left: 15px;
-    padding-top: 15px;
-    font-size: 16px;
-}
-
-}  
