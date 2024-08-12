@@ -49,7 +49,6 @@ table {
 	border-spacing: 0;
 }
 
-
 /* Set max width for the html element to 1200px and center it on the page */
 html {
     max-width: 1200px;
@@ -138,20 +137,19 @@ p {
     width: 100px;
 }
 
-/* animation for the logo so that it spins */
+/* Animation for the logo so that it spins */
 .logo {
     animation: spin 5s infinite linear;
-  }
+}
   
-  @keyframes spin {
+@keyframes spin {
     from {
-      transform: rotateY(0deg);
+        transform: rotateY(0deg);
     }
     to {
-      transform: rotateY(360deg);
+        transform: rotateY(360deg);
     }
-  }
-  
+}
 
 /* Styles for the navigation bar with background color, padding, and text alignment */
 .navigation {
@@ -163,12 +161,32 @@ p {
     clear: right;
 }
 
-nav ul li {
-    text-align: center;
-    padding-bottom: 30px;
+/* Updated navigation bar to align the logo center-left and the links center */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px; /* Adjust this value to move the logo more left or right */
 }
 
-/* Styles navigation links with no bullets and underline*/
+.nav .logo {
+    margin-right: auto;
+    padding-right: 20px; /* Adjust this value to control the spacing between the logo and the menu items */
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0;
+}
+
+.nav ul li {
+    text-align: center;
+    padding: 0 15px;
+}
+
+/* Styles navigation links with no bullets and underline */
 li a {
     list-style-type: none;
     text-decoration: none;
@@ -177,14 +195,12 @@ li a {
     font-size: 18px;
 }
 
-
-
-/* places banner text i.e. company's name on top of the picture  */
+/* Places banner text (i.e., company's name) on top of the picture */
 .banner {
     position: relative;
 }
 
- .banner-text {
+.banner-text {
     background-color: #b49fccc5;
     color: #412234;
     position: absolute;
@@ -193,9 +209,9 @@ li a {
     text-align: center;
 }
 
-/* styles fr button */
+/* Styles for buttons */
 button {
-	padding: 15px 40px;
+    padding: 15px 40px;
     margin-left: 5px;
     margin-top: 5px;
     font-family: Impact; 
@@ -229,7 +245,7 @@ button {
     width:98%;
 }
 
-/* moves the button to center */
+/* Moves the button to center */
 .cbutton-1 {
     display: flex;
     flex-direction: column;
@@ -258,9 +274,7 @@ form {
     padding-left: 10px;
 }
 
-
-
-/* animation for the button so it increses size */
+/* Animation for the button so it increases in size */
 .button-1, .button-2, .button-3 {
     animation: buttonAnimation 1s ease-in-out infinite alternate;
 }
@@ -277,16 +291,14 @@ form {
 .img-1 {
     width: 220px;
     height: 130px;
-   object-fit:contain;
-   padding-bottom: 10px;
+    object-fit: contain;
+    padding-bottom: 10px;
 }
-
-
 
 .grid-1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 25px;
 }
 
 .grid-2 {
@@ -303,26 +315,38 @@ form {
 }
 
 
+.projects .scroll-container section a {
+    text-decoration: none;
+}
+
+
+.projects .scroll-container section p {
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0; 
+}
+
+
 .img-2 {
-   width: 220px;
-   object-fit:contain;
-   padding-bottom: 10px;
+    width: 220px;
+    object-fit: contain;
+    padding-bottom: 10px;
 }
 
 .img-3 {
     width: 400px;
     padding-bottom: 20px;
- }
+}
 
 .content-management {
     display: none;
 }
 
-/* background colour bleeds */
+/* Background colour bleeds */
 .footer{
-	background-color: #EAD7D7;
-	color:#412234;
-	padding-top: 15px;
+    background-color: #EAD7D7;
+    color: #412234;
+    padding-top: 15px;
     padding-bottom: 10px;
     padding-left: 5px;
     margin-top: 10px;
@@ -331,7 +355,6 @@ form {
 .social-media {
     text-align: right;
     float: right;
-
 }
 
 .menu-text {
@@ -343,17 +366,23 @@ form {
     padding-top: 10px;
 }
 
+.thank-you-text {
+    text-align: center;
+    padding-top: 190px; 
+    padding-bottom: 190px;
+}
+
 /* for desktop */
-@media screen and (min-width: 768px){
-	/* decreases the content size so more bleed */
+@media screen and (min-width: 768px) {
+    /* Decreases the content size so more bleed */
     
     .wrapper {
         width: 80%;
         margin: auto;
     }
 
-     /* puts nav in line by using flex */
-     nav ul {
+    /* Puts nav in line by using flex */
+    nav ul {
         display: flex;
         margin-top: 25px;
         justify-content: center;
@@ -369,11 +398,12 @@ form {
     }
 
     .banner-text {
-        left: 0%;
+        top: 25%;
+        left: 3.5%;
         padding: 72px 77px;
     }
 
-        /* Styles for different heading tags */
+    /* Styles for different heading tags */
     h1 {
         font-size: 60px;
     }
@@ -393,7 +423,6 @@ form {
     .content-management {
         display: block;
     }
-
 
     .flex-2 {
         display: flex;
